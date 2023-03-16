@@ -7,7 +7,7 @@ import models.Lancamentos as lancamento
 import Pages.Lancamentos.Incluir as PagesIncluirLancanto
 import Pages.Lancamentos.Listar as PagesListar
 
-st.title("Incluir Lancamentos")
+
 
 st.sidebar.title("MENU")
 page_cliente = st.sidebar.selectbox('',['Incluir','Consultar'] )

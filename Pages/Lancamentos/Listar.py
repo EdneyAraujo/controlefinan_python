@@ -18,6 +18,8 @@ def Listar():
         col3.write(intem.valor)
         col4.write(intem.tipo)
         col5.write(intem.categoria)
-        button_space = col6.empty()
-        on_click = button_space.button('Excluir', 'btnExcluir' + str(intem.id))
+        button_space_excluir = col6.empty()
+        on_click_excluir = button_space_excluir.button('Excluir', 'btnExcluir' + str(intem.id))
         
+        if on_click_excluir:
+            LancamentoController.Excluir(intem.id)

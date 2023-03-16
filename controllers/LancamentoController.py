@@ -11,6 +11,12 @@ def Incluir(Lancamentos):
     Lancamentos.descricao, Lancamentos.valor, Lancamentos.tipo, Lancamentos.categoria).rowcount
     db.cnxn.commit()
 
+def Excluir(id):
+    count = db.cursor.execute("""
+    DELETE FROM lancamentos WHERE id = ?""",
+    id).rowcount
+    db.cnxn.commit()
+
 def SelecionarTodos():
     db.cursor.execute("SELECT * FROM lancamentos")
     costumerList = []

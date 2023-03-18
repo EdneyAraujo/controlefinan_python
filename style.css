@@ -1,3 +1,7 @@
-#MainMenu{
+footer{
+    visibility: hidden;
+}
 
+#MainMenu{
+    visibility: hidden;
 }

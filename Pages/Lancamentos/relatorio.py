@@ -18,10 +18,10 @@ def Relatorio():
     x2 = marital_false.index
     y2 = marital_false.values
 
-    plt.bar(x1, y1, label='Casados', width=0.4, align='edge')
-    plt.bar(x2, y2, label='Não Casados', width=0.4, align='edge')
+    plt.bar(x1, y1, label='Receita', width=0.4, align='edge')
+    plt.bar(x2, y2, label='Despesa', width=0.4, align='edge')
     plt.legend()
-    plt.title('Casados e Não Casados por Idade')
+    plt.title('Receitas e Despesas')
 
 
     st.pyplot(plt)

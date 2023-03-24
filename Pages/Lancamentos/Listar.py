@@ -4,7 +4,6 @@ import pandas as pd
 import controllers.LancamentoController as LancamentoController
 import models.Lancamentos as lancamento
 
-
 def Listar():
     st.title("Lançamentos")
     colms = st.columns((1, 2, 1, 1, 1,2))

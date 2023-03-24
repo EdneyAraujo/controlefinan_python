@@ -8,7 +8,6 @@ import Pages.Lancamentos.Incluir as PagesIncluirLancanto
 import Pages.Lancamentos.Listar as PagesListar
 import Pages.Lancamentos.relatorio as PageRel
 
-
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
 

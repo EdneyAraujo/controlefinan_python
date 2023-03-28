@@ -8,6 +8,7 @@ def Incluir():
     
     with st.form(key="incluir_cliente"):
         input_descricao = st.text_input(label="Descrição")
+        input_descricao = st.text_input(label="DATA")
         input_valor = st.number_input("Insira o Valor")    
         input_tipo = st.selectbox("SELECIONE O TIPO LANÇAMENTO", options=["RECEITA","DESPESA"])
         input_categoria = st.selectbox("SELECIONE A CATEGORIA", options=["MORADIA","LAZER","ESTUDOS"])

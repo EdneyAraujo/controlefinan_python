@@ -21,6 +21,8 @@ def Listar():
         button_space_excluir = col6.empty()
         on_click_excluir = button_space_excluir.button('Excluir', 'btnExcluir' + str(intem.id))
         
+        
         if on_click_excluir:
             LancamentoController.Excluir(intem.id)
             button_space_excluir.button('Excluido')
+            st.experimental_rerun()
